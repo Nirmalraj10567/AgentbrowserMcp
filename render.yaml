@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: agentbrowser-mcp
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 5888
+      - key: NODE_ENV
+        value: production
+      - key: AGENT_BROWSER_SCREENSHOT_DIR
+        value: /app/screenshots
+      - key: BASE_URL
+        sync: false
