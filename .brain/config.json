@@ -1,0 +1,32 @@
+{
+  "brainVersion": "1.0.0",
+  "traceDepth": 2,
+  "maxNodes": 500,
+  "maxSnapshots": 5,
+  "rePromptIntervals": [
+    300,
+    1800,
+    86400
+  ],
+  "frameworkPriority": [
+    "react",
+    "react-native",
+    "nextjs",
+    "express",
+    "nestjs",
+    "vue",
+    "svelte",
+    "generic"
+  ],
+  "verification": {
+    "completeLevel": "standard",
+    "maxAutoScore": 95,
+    "requireUserAcknowledgement": true,
+    "weights": {
+      "codeIntegrity": 40,
+      "validation": 20,
+      "taskCompletion": 20,
+      "uiVerification": 20
+    }
+  }
+}
